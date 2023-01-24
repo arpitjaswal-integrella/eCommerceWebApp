@@ -3,3 +3,47 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/* general navigation bar styling */
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+/* flexbox because we want to align the navigation bar items in horizontal position */
+.navTop{
+    display: flex;
+    align-items: center;
+    /* making space inbetween the nav bar items */
+    justify-content: space-between;
+    
+}
+
+/* styling the search bar item */
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* customising the search input bar */
+.searchInput{
+        border: none;
+        background-color: transparent;
+}
+
+/* customising searchbar placeholder text */
+.searchInput::placeholder{
+    color: lightgrey;
+    font-size: 18px;
+}
+
+/* customising the limited offer banner on the top right */
+.limitedOffer{
+    font-size: 25px;
+    border-bottom: 2px  solid green;
+    cursor: pointer;
+}
